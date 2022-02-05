@@ -4,7 +4,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import VueRouter from 'vue-router'
 import router from './router'
-
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 // 关闭 Vue 的生产提示
 Vue.config.productionTip = false
@@ -12,6 +13,7 @@ Vue.config.productionTip = false
 // 使用插件
 Vue.use(ElementUI) // element ui 插件
 Vue.use(VueRouter) // 路由插件
+Vue.use(VueAxios, axios) // 使用 axios 插件
 
 // 创建 Vue 实例对象
 new Vue({
